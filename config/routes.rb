@@ -1,5 +1,19 @@
 Rails.application.routes.draw do
  
+  get 'posts/index'
+
+  get 'posts/new'
+
+  get 'posts/create'
+
+  get 'posts/show'
+
+  get 'posts/destroy'
+
+  get 'sessions/create'
+
+  get 'sessions/destroy'
+
  resources :users
  root 'users#index'
 
